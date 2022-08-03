@@ -31,7 +31,7 @@ $(PROJ_NAME): $(OBJ)
 	$(CC) $< $(CC_FLAGS) -o $@
 	@ echo ' '
 
-./objects/prompt.o: ./source/prompt.c $(H_SOURCE)
+./objects/parsing.o: ./source/parsing.c $(H_SOURCE)
 	@ echo 'Building target using GCC compiler: $<'
 	$(CC) $< $(CC_FLAGS) -o $@
 	@ echo ' '
